@@ -9,6 +9,10 @@ unsigned long lasttimeservo = 0;
 
 void setup() {
   Serial.begin(115200);
+    for (int i = 0; i < numServos; i++) {
+    servos[i].attach(servoPins[i]);
+    servos[i].write(0);
+  }
 
 }
 
@@ -30,6 +34,7 @@ void loop() {
     for (int i = 0; i < numServos; i++) {
       servos[i].write(value[i]);
     }
+    lasttimeservo = millis();
   }
 
 }
