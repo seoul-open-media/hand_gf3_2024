@@ -1,0 +1,20 @@
+{
+    "name": "cgf-leapmotion-pd",
+    "main": "main-processed.js",
+    "version": "0.1.0",
+    "dependencies": {
+        "leapjs": "^0.6.4",
+        "node-osc": "4.1.4",
+        "ws": "1.1.5"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Leo Kim",
+        "email": "gh.leokim@gmail.com",
+        "url": "https://github.com/ghleokim"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ghleokim/cgf-leapmotion-pd.git"
+    }
+}
