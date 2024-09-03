@@ -1,0 +1,283 @@
+#N canvas 2266 231 276 311 12;
+#N canvas 1039 451 179 81 LeapMotion 0;
+#N canvas 75 89 1247 789 node_osc 0;
+#X obj 37 58 unpackOSC;
+#X symbolatom 471 118 10 0 0 0 - - - 0;
+#X floatatom 471 142 5 0 0 0 - - - 0;
+#X floatatom 515 142 5 0 0 0 - - - 0;
+#X floatatom 559 142 5 0 0 0 - - - 0;
+#X symbolatom 591 118 10 0 0 0 - - - 0;
+#X floatatom 607 150 5 0 0 0 - - - 0;
+#X floatatom 642 150 5 0 0 0 - - - 0;
+#X floatatom 679 150 5 0 0 0 - - - 0;
+#X symbolatom 718 118 10 0 0 0 - - - 0;
+#X floatatom 734 150 5 0 0 0 - - - 0;
+#X floatatom 769 150 5 0 0 0 - - - 0;
+#X floatatom 806 150 5 0 0 0 - - - 0;
+#X obj 471 168 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 515 168 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 559 168 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 606 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 640 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 678 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 735 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 769 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 807 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 471 71 unpack s f f f s f f f s f f f s f f f s f f f, f 91
+;
+#X symbolatom 847 118 10 0 0 0 - - - 0;
+#X floatatom 863 150 5 0 0 0 - - - 0;
+#X floatatom 898 150 5 0 0 0 - - - 0;
+#X floatatom 935 150 5 0 0 0 - - - 0;
+#X obj 864 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 898 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 936 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X symbolatom 984 118 10 0 0 0 - - - 0;
+#X floatatom 1000 150 5 0 0 0 - - - 0;
+#X floatatom 1035 150 5 0 0 0 - - - 0;
+#X floatatom 1072 150 5 0 0 0 - - - 0;
+#X obj 1001 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 1035 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 1073 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 291 88 get range for each joint;
+#X text 324 109 thumb 0.75 0.72 0.3;
+#X text 260 130 index and others 0.2 0.1 0.4;
+#X floatatom 609 528 5 0 0 0 - - - 0;
+#X floatatom 767 526 5 0 0 0 - - - 0;
+#X floatatom 922 521 5 0 0 0 - - - 0;
+#X floatatom 1075 517 5 0 0 0 - - - 0;
+#X obj 609 601 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 767 596 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 923 596 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 1076 595 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 73 115 routeOSC /hand;
+#X text 780 21 finger 1-5 inverted;
+#X obj 767 321 node-osc-finger 3;
+#X obj 923 321 node-osc-finger 4;
+#X obj 1076 320 node-osc-finger 5;
+#X floatatom 416 638 5 0 0 0 - - - 0;
+#X obj 467 608 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 608 321 node-osc-finger 2;
+#X obj 459 327 node-osc-finger 1;
+#X obj 472 50 routeOSC /fingers/raw;
+#X symbolatom 45 171 10 0 0 0 - - - 0;
+#X floatatom 70 205 5 0 0 0 - - - 0;
+#X obj 55 406 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X symbolatom 117 170 10 0 0 0 - - - 0;
+#X floatatom 121 200 5 0 0 0 - - - 0;
+#X obj 88 408 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 260 796 node-osc-robot-select;
+#X obj 55 249 clip 0 1;
+#X floatatom 121 289 5 0 0 0 - - - 0;
+#X symbolatom 195 172 10 0 0 0 - - - 0;
+#X symbolatom 284 172 10 0 0 0 - - - 0;
+#X floatatom 198 198 5 0 0 0 - - - 0;
+#X floatatom 309 204 5 0 0 0 - - - 0;
+#X obj 68 143 unpack s f s f s f s f s f, f 28;
+#X symbolatom 357 171 10 0 0 0 - - - 0;
+#X floatatom 373 207 5 0 0 0 - - - 0;
+#X floatatom 373 311 5 0 0 0 - - - 0;
+#X floatatom 278 299 5 0 0 0 - - - 0;
+#X obj 340 455 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 278 319 - 1;
+#X obj 278 340 * -1;
+#X obj 459 521 * 2;
+#X obj 460 545 clip 0 1;
+#X obj 441 571 - 1;
+#X obj 389 612 * -1;
+#X obj 607 551 clip 0 0.7;
+#X obj 609 575 / 0.7;
+#X obj 767 546 clip 0 0.7;
+#X obj 769 570 / 0.7;
+#X obj 921 543 clip 0 0.7;
+#X obj 923 567 / 0.7;
+#X obj 1105 548 clip 0 0.7;
+#X obj 1107 572 / 0.7;
+#X obj 373 227 clip -200 200;
+#X obj 373 248 + 200;
+#X obj 373 269 / 400;
+#X obj 373 290 clip 0 1;
+#X obj 279 236 clip -200 200;
+#X obj 278 257 + 200;
+#X obj 278 278 / 400;
+#X obj 121 222 clip 0.5 1;
+#X obj 121 244 - 0.5;
+#X obj 121 267 * 2;
+#X obj 37 37 udpreceive 3030;
+#X obj 289 510 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 198 222 clip 50 600;
+#X obj 198 246 - 50;
+#X obj 197 270 / 550;
+#X obj 196 411 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 516 678 inlet;
+#X obj 560 677 inlet;
+#X obj 516 702 - 1;
+#X connect 0 0 57 0;
+#X connect 0 0 48 0;
+#X connect 2 0 13 0;
+#X connect 3 0 14 0;
+#X connect 4 0 15 0;
+#X connect 6 0 16 0;
+#X connect 7 0 17 0;
+#X connect 8 0 18 0;
+#X connect 10 0 19 0;
+#X connect 11 0 20 0;
+#X connect 12 0 21 0;
+#X connect 13 0 56 0;
+#X connect 14 0 56 1;
+#X connect 15 0 56 2;
+#X connect 16 0 55 0;
+#X connect 17 0 55 1;
+#X connect 18 0 55 2;
+#X connect 19 0 50 0;
+#X connect 20 0 50 1;
+#X connect 21 0 50 2;
+#X connect 22 0 1 0;
+#X connect 22 1 2 0;
+#X connect 22 2 3 0;
+#X connect 22 3 4 0;
+#X connect 22 4 5 0;
+#X connect 22 5 6 0;
+#X connect 22 6 7 0;
+#X connect 22 7 8 0;
+#X connect 22 8 9 0;
+#X connect 22 9 10 0;
+#X connect 22 10 11 0;
+#X connect 22 11 12 0;
+#X connect 22 12 23 0;
+#X connect 22 13 24 0;
+#X connect 22 14 25 0;
+#X connect 22 15 26 0;
+#X connect 22 16 30 0;
+#X connect 22 17 31 0;
+#X connect 22 18 32 0;
+#X connect 22 19 33 0;
+#X connect 24 0 27 0;
+#X connect 25 0 28 0;
+#X connect 26 0 29 0;
+#X connect 27 0 51 0;
+#X connect 28 0 51 1;
+#X connect 29 0 51 2;
+#X connect 31 0 34 0;
+#X connect 32 0 35 0;
+#X connect 33 0 36 0;
+#X connect 34 0 52 0;
+#X connect 35 0 52 1;
+#X connect 36 0 52 2;
+#X connect 40 0 83 0;
+#X connect 41 0 85 0;
+#X connect 42 0 87 0;
+#X connect 43 0 89 0;
+#X connect 44 0 64 6;
+#X connect 45 0 64 7;
+#X connect 46 0 64 8;
+#X connect 47 0 64 9;
+#X connect 48 0 71 0;
+#X connect 50 0 41 0;
+#X connect 51 0 42 0;
+#X connect 52 0 43 0;
+#X connect 53 0 54 0;
+#X connect 54 0 64 5;
+#X connect 55 0 40 0;
+#X connect 56 0 79 0;
+#X connect 57 0 22 0;
+#X connect 59 0 65 0;
+#X connect 60 0 64 0;
+#X connect 62 0 98 0;
+#X connect 63 0 64 1;
+#X connect 65 0 60 0;
+#X connect 66 0 63 0;
+#X connect 69 0 103 0;
+#X connect 70 0 95 0;
+#X connect 71 0 58 0;
+#X connect 71 1 59 0;
+#X connect 71 2 61 0;
+#X connect 71 3 62 0;
+#X connect 71 4 67 0;
+#X connect 71 5 69 0;
+#X connect 71 6 68 0;
+#X connect 71 7 70 0;
+#X connect 71 8 72 0;
+#X connect 71 9 73 0;
+#X connect 73 0 91 0;
+#X connect 74 0 102 0;
+#X connect 75 0 77 0;
+#X connect 76 0 64 3;
+#X connect 77 0 78 0;
+#X connect 78 0 76 0;
+#X connect 79 0 80 0;
+#X connect 80 0 81 0;
+#X connect 81 0 82 0;
+#X connect 82 0 53 0;
+#X connect 83 0 84 0;
+#X connect 84 0 44 0;
+#X connect 85 0 86 0;
+#X connect 86 0 45 0;
+#X connect 87 0 88 0;
+#X connect 88 0 46 0;
+#X connect 89 0 90 0;
+#X connect 90 0 47 0;
+#X connect 91 0 92 0;
+#X connect 92 0 93 0;
+#X connect 93 0 94 0;
+#X connect 94 0 74 0;
+#X connect 95 0 96 0;
+#X connect 96 0 97 0;
+#X connect 97 0 75 0;
+#X connect 98 0 99 0;
+#X connect 99 0 100 0;
+#X connect 100 0 66 0;
+#X connect 101 0 0 0;
+#X connect 102 0 64 4;
+#X connect 103 0 104 0;
+#X connect 104 0 105 0;
+#X connect 105 0 106 0;
+#X connect 106 0 64 2;
+#X connect 107 0 109 0;
+#X connect 108 0 64 11;
+#X connect 109 0 64 10;
+#X restore 8 44 pd node_osc;
+#X obj 8 20 nbx 3 20 -1e+37 1e+37 0 0 empty empty LeapMotion_Control
+0 -8 0 10 #f8fc00 #000000 #000000 0 256;
+#X obj 81 21 tgl 20 0 empty empty On/Off 22 10 0 10 #f8fc00 #000000
+#000000 0 1;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X restore 38 24 pd LeapMotion;
+#X obj 136 119 nbx 4 14 -1e+37 1e+37 0 1 empty empty sec 0 -8 0 10
+#fcfcfc #000000 #000000 170 256;
+#X obj 31 204 bng 8 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 36 138 GF3_hand 1 1 200;
+#X obj 38 48 netsend01;
+#X msg 36 105 1;
+#X obj 35 79 r GF3_dance_bang;
+#X connect 1 0 3 2;
+#X connect 3 0 2 0;
+#X connect 5 0 3 0;
+#X connect 6 0 5 0;
