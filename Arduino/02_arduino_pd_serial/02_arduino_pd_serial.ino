@@ -1,10 +1,10 @@
 #include <Servo.h>
 
-const int numServos = 10;
-const int servoPins[numServos] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+const int numServos = 5;
+const int servoPins[numServos] = {0, 1, 2, 3, 4};
 Servo servos[numServos];
 
-byte value[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+byte value[5] = {0, 180, 180, 180, 0};
 unsigned long lasttimeservo = 0;
 
 void setup() {
