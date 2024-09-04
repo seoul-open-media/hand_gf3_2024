@@ -1,0 +1,4 @@
+#N canvas 0 0 831 526 12;
+#X declare -lib Gem;
+#X obj 211 104 pix_image;
+#X obj 495 5 declare -lib Gem;
