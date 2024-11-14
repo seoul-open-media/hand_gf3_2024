@@ -1,6 +1,6 @@
-#N canvas 1497 233 276 311 12;
-#N canvas 1039 451 179 81 LeapMotion 1;
-#N canvas 180 271 1247 789 node_osc 1;
+#N canvas 366 649 276 311 12;
+#N canvas 1039 451 179 81 LeapMotion 0;
+#N canvas 180 271 1247 789 node_osc 0;
 #X obj 37 58 unpackOSC;
 #X symbolatom 471 118 10 0 0 0 - - - 0;
 #X floatatom 471 142 5 0 0 0 - - - 0;
@@ -14,30 +14,46 @@
 #X floatatom 734 150 5 0 0 0 - - - 0;
 #X floatatom 769 150 5 0 0 0 - - - 0;
 #X floatatom 806 150 5 0 0 0 - - - 0;
-#X obj 471 168 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 515 168 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 559 168 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 606 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 640 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 678 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 735 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 769 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 807 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 471 71 unpack s f f f s f f f s f f f s f f f s f f f, f 91;
+#X obj 471 168 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 515 168 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 559 168 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 606 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 640 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 678 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 735 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 769 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 807 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 471 71 unpack s f f f s f f f s f f f s f f f s f f f, f 91
+;
 #X symbolatom 847 118 10 0 0 0 - - - 0;
 #X floatatom 863 150 5 0 0 0 - - - 0;
 #X floatatom 898 150 5 0 0 0 - - - 0;
 #X floatatom 935 150 5 0 0 0 - - - 0;
-#X obj 864 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 898 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 936 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 864 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 898 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 936 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X symbolatom 984 118 10 0 0 0 - - - 0;
 #X floatatom 1000 150 5 0 0 0 - - - 0;
 #X floatatom 1035 150 5 0 0 0 - - - 0;
 #X floatatom 1072 150 5 0 0 0 - - - 0;
-#X obj 1001 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 1035 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 1073 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 1001 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 1035 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 1073 176 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X text 291 88 get range for each joint;
 #X text 324 109 thumb 0.75 0.72 0.3;
 #X text 260 130 index and others 0.2 0.1 0.4;
@@ -45,26 +61,33 @@
 #X floatatom 767 526 5 0 0 0 - - - 0;
 #X floatatom 922 521 5 0 0 0 - - - 0;
 #X floatatom 1075 517 5 0 0 0 - - - 0;
-#X obj 609 601 vsl 15 128 0 1 0 0 f2 empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 767 596 vsl 15 128 0 1 0 0 f3 empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 923 596 vsl 15 128 0 1 0 0 f4 empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
-#X obj 1076 595 vsl 15 128 0 1 0 0 f5 empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 609 601 vsl 15 128 0 1 0 0 f2 empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 767 596 vsl 15 128 0 1 0 0 f3 empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 923 596 vsl 15 128 0 1 0 0 f4 empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 1076 595 vsl 15 128 0 1 0 0 f5 empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X obj 73 115 routeOSC /hand;
 #X text 780 21 finger 1-5 inverted;
 #X obj 767 321 node-osc-finger 3;
 #X obj 923 321 node-osc-finger 4;
 #X obj 1076 320 node-osc-finger 5;
 #X floatatom 416 638 5 0 0 0 - - - 0;
-#X obj 467 608 vsl 15 128 0 1 0 0 f1 empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 467 608 vsl 15 128 0 1 0 0 f1 empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X obj 608 321 node-osc-finger 2;
 #X obj 459 327 node-osc-finger 1;
 #X obj 472 50 routeOSC /fingers/raw;
 #X symbolatom 45 171 10 0 0 0 - - - 0;
 #X floatatom 70 205 5 0 0 0 - - - 0;
-#X obj 55 406 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 55 406 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X symbolatom 117 170 10 0 0 0 - - - 0;
 #X floatatom 121 200 5 0 0 0 - - - 0;
-#X obj 88 408 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 88 408 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X obj 260 796 node-osc-robot-select;
 #X obj 55 249 clip 0 1;
 #X floatatom 121 289 5 0 0 0 - - - 0;
@@ -77,7 +100,8 @@
 #X floatatom 373 207 5 0 0 0 - - - 0;
 #X floatatom 373 311 5 0 0 0 - - - 0;
 #X floatatom 278 299 5 0 0 0 - - - 0;
-#X obj 340 455 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 340 455 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X obj 278 319 - 1;
 #X obj 278 340 * -1;
 #X obj 459 521 * 2;
@@ -103,11 +127,13 @@
 #X obj 121 244 - 0.5;
 #X obj 121 267 * 2;
 #X obj 37 37 udpreceive 3030;
-#X obj 289 510 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 289 510 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X obj 198 222 clip 50 600;
 #X obj 198 246 - 50;
 #X obj 197 270 / 550;
-#X obj 196 411 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 196 411 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X obj 516 678 inlet;
 #X obj 560 677 inlet;
 #X obj 516 702 - 1;
@@ -235,18 +261,24 @@
 #X connect 108 0 64 11;
 #X connect 109 0 64 10;
 #X restore 8 44 pd node_osc;
-#X obj 8 20 nbx 3 20 -1e+37 1e+37 0 0 empty empty LeapMotion_Control 0 -8 0 10 #f8fc00 #000000 #000000 0 256;
-#X obj 81 21 tgl 20 0 empty empty On/Off 22 10 0 10 #f8fc00 #000000 #000000 0 1;
+#X obj 8 20 nbx 3 20 -1e+37 1e+37 0 0 empty empty LeapMotion_Control
+0 -8 0 10 #f8fc00 #000000 #000000 0 256;
+#X obj 81 21 tgl 20 0 empty empty On/Off 22 10 0 10 #f8fc00 #000000
+#000000 0 1;
 #X connect 1 0 0 0;
 #X connect 2 0 0 1;
 #X restore 38 24 pd LeapMotion;
-#X obj 136 119 nbx 4 14 -1e+37 1e+37 0 1 empty empty sec 0 -8 0 10 #fcfcfc #000000 #000000 170 256;
-#X obj 31 204 bng 8 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
-#X obj 36 138 GF3_hand 1 1 200;
+#X obj 136 119 nbx 4 14 -1e+37 1e+37 0 1 empty empty sec 0 -8 0 10
+#fcfcfc #000000 #000000 170 256;
+#X obj 31 204 bng 8 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
 #X obj 38 48 netsend01;
 #X msg 36 105 1;
 #X obj 35 79 r GF3_dance_bang;
-#X connect 1 0 3 2;
-#X connect 3 0 2 0;
-#X connect 5 0 3 0;
-#X connect 6 0 5 0;
+#X obj 36 138 GF3_hand 1 1 300;
+#X obj 145 38 r dance_stop;
+#X connect 1 0 6 2;
+#X connect 4 0 6 0;
+#X connect 5 0 4 0;
+#X connect 6 0 2 0;
+#X connect 7 0 6 1;
